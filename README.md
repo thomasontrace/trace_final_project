@@ -71,20 +71,21 @@ online-retail-ml-project/
 
 ---
 
-## Current Results
+## Results
+| Model | RMSE | MAE | R² |
+|------|------|------|------|
+| Random Forest | 40.29 | 7.38 | 0.995 |
+| Time Series | 5569.66 | 4564.68 | -0.085 |
 
-* Data cleaned (removed missing CustomerID, returns, invalid prices)
-* Feature engineering completed (RFM features: Recency, Frequency, Monetary)
-* Two models implemented and evaluated
-* Time series model performs better for forecasting sales trends
+## Key Insights
+- Customer-level features significantly outperform time-based models
+- Purchase behavior patterns are strong predictors of spending
+- Time series patterns are highly volatile and less useful
 
----
+## Recommendation
+Use the Random Forest model for predicting customer spending and guiding marketing strategies.
 
-## Future Improvements
 
-* Add additional engineered features (seasonality, day-of-week trends)
-* Perform hyperparameter tuning
-* Test advanced models (Gradient Boosting, ARIMA)
-* Build interactive dashboard for business use
+
 
 
